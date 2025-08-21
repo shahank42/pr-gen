@@ -9,7 +9,7 @@ import * as fs from "fs";
 const scriptDir = path.resolve(__dirname, "scripts");
 const repoDir = path.resolve(scriptDir, "temp/test_repo");
 
-describe("GitService", () => {
+describe("Git", () => {
   beforeAll(() => {
     execSync(`bash ${scriptDir}/git_setup.sh`);
     process.chdir(repoDir);
